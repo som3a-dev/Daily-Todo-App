@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <h1>Daily Todos</h1> 
+        <h2>All your todos in one place, reset every day at 12 AM. </h2>
+        <h2>Zero clutter, Full accountability.</h2>
+    </div>
+
+    <div class="main">
+        <h2 class="task-list-title">Task list</h2>
+        <ul class="task-list" id="task-list">
+        </ul>
+
+        <div class="task-list-buttons">
+            <button class="task-list-button" id="add-task-button">
+                <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 5v14M5 12h14" stroke="red" stroke-width="1" stroke-linecap="round"/>
+                </svg>
+                <p class="task-list-button-text">Add task</p>
+            </button>
+            <button class="task-list-button" id="clear-list-button">
+                <p class="task-list-button-text">Clear list</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="overlay">
+        <div class="popup" id="add-task-popup">
+            <h3 class="popup-title">Add Task</h3>
+            <form class="popup-form" id="add-task-form" autocomplete="off">
+                <div class="popup-form-group">
+                    <label for="task-name">Name:</label>
+                    <input type="text" name="name" placeholder="My Task">
+                </div>
+                <div class="popup-form-group">
+                    <label for="task-due-time">Due Time:</label>
+                    <input type="time" name="due-time" value="00:00">
+                </div>
+
+                <input type="submit" value="Done">
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/util.js"></script>
+    <script src="scripts/task.js"></script>
+    <script src="scripts/day.js"></script>
+    <script src="scripts/dom.js"></script>
+    <script src="scripts/handlers.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
