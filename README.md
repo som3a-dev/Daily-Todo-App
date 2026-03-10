@@ -2,6 +2,8 @@
 
 A minimal daily todo web app built with HTML, CSS, and vanilla JavaScript.
 
+![App Screenshot](screenshot.png)
+
 ## Features
 - Task creation
 - Task completion
